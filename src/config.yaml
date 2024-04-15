@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Tejiendo Vínculos SM
+  site: 'https://netlify.tejiendovinculos.com'
   base: '/'
   trailingSlash: false
 
@@ -9,14 +9,14 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Tejiendo Vínculos
+    template: '%s — Tejiendo Vínculos'
+  description: "Promocionamos la salud mental de familias y comunidades."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Tejiendo Vínculos
     images:
       - url: '~/assets/images/default.png'
         width: 1200
@@ -28,7 +28,7 @@ metadata:
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: es
   textDirection: ltr
 
 apps:
@@ -74,17 +74,17 @@ ui:
   tokens:
     default:
       fonts:
-        sans: InterVariable
-        serif: InterVariable
-        heading: InterVariable
+        sans: Poppins
+        serif: Poppins
+        heading: Poppins
       colors:
-        default: rgb(16 16 16)
+        default: rgb(4 4 4)
         heading: rgb(0 0 0)
         muted: rgb(16 16 16 / 66%)
         bgPage: rgb(255 255 255)
-        primary: rgb(1 97 239)
+        primary: rgb(16 64 135)
         secondary: rgb(1 84 207)
-        accent: rgb(109 40 217)
+        accent: rgb(30, 90, 179)
     dark:
       fonts: {}
       colors:
@@ -92,6 +92,6 @@ ui:
         heading: rgb(247, 248, 248)
         muted: rgb(229 236 246 / 66%)
         bgPage: rgb(3 6 32)
-        primary: rgb(1 97 239)
+        primary: rgb(16 64 135)
         secondary: rgb(1 84 207)
         accent: rgb(109 40 217)

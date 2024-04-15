@@ -1,0 +1,64 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import ContactUs from '~/components/widgets/Contact.astro';
+import Features2 from '~/components/widgets/Features2.astro';
+
+const metadata = {
+  title: 'Contacto',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText tagline="" title="Comunícate con nosotros" />
+
+  <ContactUs
+    title="Déjanos un mensaje"
+    subtitle="Estaremos encantados de resolver cualquier inquietud"
+    inputs={[
+      {
+        type: 'text',
+        name: 'nombre',
+        label: 'Nombre',
+      },
+      {
+        type: 'email',
+        name: 'email',
+        label: 'Correo electrónico',
+      },
+    ]}
+    textarea={{
+      label: 'Mensaje',
+    }}
+    disclaimer={{
+      label:
+        'Al enviar el mensaje, aceptas nuestra política de privacidad.',
+    }}
+    description="Típicamente respondemos dentro de las siguientes 24 horas."
+  />
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="Estamos a tu disposición..."
+    items={[
+      {
+        title: 'Phone',
+        description: '+57 321 567-890',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Correo electrónico',
+        description: 'contacto@tejiendovinculos.com',
+        icon: 'tabler:mail',
+      },
+      {
+        title: 'Ubicación',
+        description: 'Kilómetro 1 vía Andes. Jericó, Antioquia, Colombia',
+        icon: 'tabler:map-pin',
+      },
+    ]}
+  />
+</Layout>
